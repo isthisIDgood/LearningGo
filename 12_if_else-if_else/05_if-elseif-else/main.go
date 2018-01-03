@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main(){
+
+	if false{
+		fmt.Println("first")
+	}else if true{
+		fmt.Println("second")
+	}else {
+		fmt.Println("third")
+	}
+}

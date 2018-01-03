@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 func main (){
-	var sumAnswer = 0
+	var total = 0
 	for i := 0; i < 1000; i++{
 		if i % 3 == 0{
-			sumAnswer += i
+			total += i //total = total + i
 		}else if i % 5 == 0{
-			sumAnswer += i
+			total += i
 		}
 	}
-	fmt.Println(sumAnswer)
+	fmt.Println(total)
 }

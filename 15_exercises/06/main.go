@@ -15,4 +15,4 @@ func main() {
 	fmt.Println(sum)
 }
 
-// prints the sum of the even numbers in the fibonacci whose values don't equal or surpass 4 million
+// prints the sum of the even numbers in the fibonacci sequence whose values don't equal or surpass 4 million

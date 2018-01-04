@@ -1,12 +1,12 @@
 package _1_with_error_checking
 
 import (
-	"net/http"
-	"io/ioutil"
 	"fmt"
+	"io/ioutil"
+	"net/http"
 )
 
-func main(){
+func main() {
 	res, _ := http.Get("http://www.mcleods.com/")
 	page, _ := ioutil.ReadAll(res.Body)
 	res.Body.Close()

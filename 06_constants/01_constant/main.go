@@ -4,8 +4,6 @@ import "fmt"
 
 const p = "death and taxes"
 
-
-
 func main() {
 
 	const q = 42
@@ -14,4 +12,5 @@ func main() {
 	fmt.Println("q -", q)
 
 }
+
 //a CONSTANT is an unchanging variable

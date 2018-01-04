@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func main(){
-	switch "Medhi"{
+func main() {
+	switch "Medhi" {
 	case "Daniel":
 		fmt.Println("Wassup Daniel")
 	case "Medhi":

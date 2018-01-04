@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-func main(){
-	if false{
+func main() {
+	if false {
 		fmt.Println("first")
-	}else if false{
+	} else if false {
 		fmt.Println("second")
-	}else if true{
+	} else if true {
 		fmt.Println("third")
-	}else{
+	} else {
 		fmt.Println("fourth")
 	}
 }

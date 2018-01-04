@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	a := "stored in a"
 	b := "stored in b"
 	fmt.Println("a -", a)
-//	b not used - invalid code
+	//	b not used - invalid code
 }

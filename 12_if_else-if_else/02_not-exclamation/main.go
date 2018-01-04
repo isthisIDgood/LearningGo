@@ -4,12 +4,12 @@ import (
 	"fmt"
 )
 
-func main(){
-	if !true{
+func main() {
+	if !true {
 		fmt.Println("This won't run")
 	}
 
-	if !false{
+	if !false {
 		fmt.Println("This will run")
 	}
 }

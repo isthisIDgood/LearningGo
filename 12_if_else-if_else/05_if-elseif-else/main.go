@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
-	if false{
+	if false {
 		fmt.Println("first")
-	}else if true{
+	} else if true {
 		fmt.Println("second")
-	}else {
+	} else {
 		fmt.Println("third")
 	}
 }

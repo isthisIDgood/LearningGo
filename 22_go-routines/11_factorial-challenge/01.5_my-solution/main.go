@@ -18,8 +18,19 @@ func factorial(n int) chan int {
 		for i := n; i > 0; i-- {
 			total *= i
 		}
-			c <- total
-			close(c)
+		c <- total
+		//close(c)
 	}()
-		return c
+	//return c
+	go func() {
+		total := 1
+		for i := n; i > 0; i-- {
+			total *= i
+		}
+		c <- total
+		close(c)
+	}()
+	return c
 }
+
+//takes original answer and puts it into the channel twice

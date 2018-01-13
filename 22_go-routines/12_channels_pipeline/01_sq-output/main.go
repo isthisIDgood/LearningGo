@@ -24,12 +24,12 @@ func gen(nums ...int) chan int {
 }
 
 func sq(in chan int) chan int {
-	out := make(chan int)
+	out2 := make(chan int)
 	go func() {
 		for n := range in {
-			out <- n * n
+			out2 <- n * n
 		}
-		close(out)
+		close(out2)
 	}()
-	return out
+	return out2
 }

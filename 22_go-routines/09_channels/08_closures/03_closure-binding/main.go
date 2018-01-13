@@ -1,21 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
 func main() {
 	done := make(chan bool)
 
 	values := []string{"a", "b", "c"}
 	for _, v := range values {
-		v := v // create a new 'v'.
-		go func() {
-			fmt.Println(v)
+		go func(n string) {
+			http.Get("https://www.google.com/")
+			fmt.Println(n)
 			done <- true
-		}()
+		}(v)
 	}
 
 	// wait for all goroutines to complete before exiting
-	for _ = range values {
+	for range values {
 		<-done
 	}
 }

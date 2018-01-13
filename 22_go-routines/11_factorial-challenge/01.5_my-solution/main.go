@@ -6,7 +6,7 @@ import (
 
 func main() {
 	c := factorial(4)
-	for n:= range c {
+	for n := range c {
 		fmt.Println(n)
 	}
 }

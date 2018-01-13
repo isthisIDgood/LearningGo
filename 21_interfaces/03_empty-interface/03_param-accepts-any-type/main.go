@@ -21,7 +21,7 @@ func specs(a interface{}) {
 }
 
 func main() {
-	fido := dog{animal {"woof"}, true}
+	fido := dog{animal{"woof"}, true}
 	fifi := cat{animal{"meow"}, true}
 	specs(fido)
 	specs(fifi)
